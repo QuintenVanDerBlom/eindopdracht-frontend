@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-body {
+* {
+    box-sizing: border-box;
+}
+
+html {
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
     background-color: white;
+}
+
+body {
+    margin: auto;
 }
 
 .navigation {
@@ -18,7 +26,7 @@ body {
 }
 
 .navigation img {
-    height: 100px;
+    height: 80px;
 }
 
 .navigation a {
@@ -26,7 +34,7 @@ body {
 }
 
 .headline {
-    background-image: url(/images/thumb-1920-867424.jpg);
+    background-image: url(/eindopdracht-frontend/images/thumb-1920-867424.jpg);
     width: auto;
     height: 750px;
     color: white;
@@ -54,8 +62,104 @@ body {
 
 .subheading {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+
+    border-bottom: solid 1px black;
 }
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.card {
+    height: 500px;
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: black 1px solid;
+    border-radius: 8px;
+}
+
+.card h1, i, p, button {
+    padding-left: 20px;
+}
+
+.card img {
+    width: 400px;
+    height: 200px;
+    border: black solid 1px;
+    border-radius: 8px;
+}
+
+.card button {
+    height: 50px;
+    width: 150px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form input {
+    height: 50px;
+    width: 500px;
+}
+
+.form-name input {
+    width: 250px;
+}
+
+.form-location input {
+    width: 250px
+}
+
+
+footer {
+    display: flex;
+    height: 250px;
+    width: auto;
+    background-color: black;
+    color: white;
+}
+
+footer i {
+    color: white;
+}
+
+.icons {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icons img {
+    height: 150px;
+    width: 200px;
+}
+
+.links {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+
+
+
+
+
+@media (orientation: portrait) {}
