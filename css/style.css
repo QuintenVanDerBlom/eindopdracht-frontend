@@ -22,7 +22,7 @@ button {
 
 .navigation {
     width: auto;
-    height: 80px;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,7 +62,7 @@ button {
 
 .headline {
     background-image: url(/eindopdracht-frontend/images/wp8626219.jpg);
-    max-width: 100%;
+    max-width: 100vw;
     object-fit: cover;
     height: 70vh;
     color: white;
@@ -127,10 +127,16 @@ button {
 }
 
 .card {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: auto;
+    padding-bottom: 20px;
     width: 400px;
     border: black 1px solid;
     border-radius: 8px;
+
 
     /* color: white;
     background-color: lightgrey;
@@ -154,8 +160,8 @@ button {
 }
 
 .card img {
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border: black solid 1px;
     border-radius: 8px;
 }
@@ -200,27 +206,48 @@ button {
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-
-    margin-top: 10px;
 }
 
-.form .name-container {
+.form .name-container,
+.form .name-container input {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 290px;
+    margin-bottom: 10px;
 }
 
-.form .city-container {
+.form .city-container,
+.form .city-container input {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 290px;
 }
 
-.form .radio-container {
+.form .subject-container {
+    width: auto;
+}
+
+.form .radio-container,
+.form .radio-container input,
+.form .radio-container .radio-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.form .radio-container label {
+    margin-bottom: 0px;
+}
+
+.form .checkbox-container,
+.form .checkbox-container label {
+    flex-direction: row;
+    justify-content: left;
     gap: 20px;
+
+    margin-bottom: 0px;
 }
 
 .form label {
@@ -228,7 +255,6 @@ button {
     text-align: left;
 
     margin-bottom: 10px;
-    padding-left: 10px;
 }
 
 
@@ -236,7 +262,6 @@ button {
 input[type=email],
 input[type=date],
 select {
-    width: 300px;
     height: 50px;
     padding-left: 20px;
 }
@@ -266,40 +291,140 @@ select:valid {
 
 footer {
     display: flex;
-    min-height: 250px;
+    justify-content: space-between;
+    min-height: 150px;
     width: auto;
     background-color: black;
-    color: white;
+    color: rgb(148, 143, 143);
 }
 
 footer i {
+    color: rgb(148, 143, 143);
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copyright p:hover {
+    transition: 0.2s;
     color: white;
 }
 
 .icons {
-    flex-direction: column;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    gap: 20px;
 }
 
-.icons img {
-    margin-top: 20px;
-    height: 150px;
-    width: 200px;
-    background-color: white;
-    border-radius: 25%;
+.icons i:hover {
+    transition: 0.2s;
+    color: white;
 }
 
 .links {
+    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
+    align-items: center;
+    margin-right: 20px;
+    gap: 20px;
 }
 
+.links a {
+    color: rgb(148, 143, 143);
+    text-decoration: none;
+}
 
+.links a:hover {
+    transition: 0.2s;
+    color: white;
+    border-radius: 25px;
+}
 
+@media (max-width: 360px) {
 
+    .navigation {
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        padding: 0px;
+    }
 
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+    }
 
+    .headline {
+        width: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
 
-@media (orientation: portrait) {}
+    .headline-buttons {
+        width: calc(100vw - 50px);
+    }
+
+    .subheading {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .cards {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(100vw - 50px);
+    }
+
+    .form-container {
+        width: 100vw;
+    }
+
+    .form {
+        min-width: calc(100vw - 50px);
+        justify-content: center;
+
+        padding: 0px 20px 0px 20px;
+    }
+
+    .form .name-container,
+    .form .name-container input {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .form .city-container,
+    .form .city-container input {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .form .subject-container {
+        width: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        max-width: 100vw;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items:  start;
+        margin: 0px 0px 20px 20px;
+    }
+}
