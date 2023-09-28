@@ -12,6 +12,8 @@ html {
 
 body {
     margin: auto;
+    width: 100vw;
+    height: 100vh;
 }
 
 button {
@@ -62,7 +64,7 @@ button {
     background-image: url(/eindopdracht-frontend/images/wp8626219.jpg);
     max-width: 100%;
     object-fit: cover;
-    height: 750px;
+    height: 70vh;
     color: white;
     border-bottom: black solid 1px;
 
@@ -178,43 +180,96 @@ button {
     transition: 1s;
 }
 
-.form {
+.form-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
 
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-input {
-    
-}
-
-.form input {
-    height: 50px;
-    width: 500px;
-}
-
-.form-name input {
-    width: 250px;
+.form {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
-.form-location input {
-    width: 250px
+.form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    margin-top: 10px;
+}
+
+.form .name-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form .city-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form .radio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form label {
+    font-weight: bold;
+    text-align: left;
+
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+.form input[type=text],
+input[type=email],
+input[type=date],
+select {
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+input[type=radio] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type=submit] {
+    width: auto;
+    height: 50px;
+}
+
+input:invalid,
+select:invalid {
+    border: 2px solid darkred;
+    border-radius: 8px;
+}
+
+input:valid,
+select:valid {
+    border: 2px solid darkgreen;
+    border-radius: 8px;
 }
 
 
 footer {
     display: flex;
-    height: 250px;
+    min-height: 250px;
     width: auto;
     background-color: black;
     color: white;
-    gap: 1500px;
 }
 
 footer i {
@@ -227,8 +282,11 @@ footer i {
 }
 
 .icons img {
+    margin-top: 20px;
     height: 150px;
     width: 200px;
+    background-color: white;
+    border-radius: 25%;
 }
 
 .links {

@@ -54,7 +54,8 @@
                     <button>Take me there!</button>
                 </article>
                 <article class="card">
-                    <img src="/eindopdracht-frontend/images/pngtree-cold-winter-scenery-snowy-atmosphere-by-river-picture-image_2778228.png" alt="">
+                    <img src="/eindopdracht-frontend/images/pngtree-cold-winter-scenery-snowy-atmosphere-by-river-picture-image_2778228.png"
+                        alt="">
                     <h1>Vakantie 3</h1>
                     <i class="fa-solid fa-house"></i>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore illo esse tempore nostrum
@@ -64,30 +65,55 @@
                 </article>
             </div>
         </section>
-        <section class="form">
-            <div class="form-name">
-                <input type="name" name="voornaam" placeholder="Voornaam">
-                <input type="name" name="achternaam" placeholder="Achternaam">
-            </div>
-            <input type="email" name="email" id="email" placeholder="Email">
-            <div class="form-location">
-                <input type="text" name="woonplaats" placeholder="Woonplaats">
-                <input type="datetime" name="geboortedatum" id="birthday">
-            </div>
-            <input type="text" name="onderwerp" placeholder="Onderwerp">
-            <input type="text" name="bericht" placeholder="Bericht">
-            <p>Inschrijven voor de nieuwsbrief?</p>
-            <div class="form-radio">
-                <input type="radio" name="yes" id="y">
-                <input type="radio" name="yes" id="y">
-            </div>
-            <input type="checkbox" name="voorwaarden" id="">
-            <input type="button" name="submit" placeholder="Submit">
+        <section class="form-container">
+            <form class="form" action="">
+                <div class="name-container">
+                    <div>
+                        <label for="firstname">Voornaam</label>
+                        <input type="text" name="firstname" placeholder="Voornaam" required>
+                    </div>
+                    <div>
+                        <label for="surname">Achternaam</label>
+                        <input type="text" name="surname" placeholder="Achternaam" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Email-adres</label>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="city-container">
+                    <div>
+                        <label for="geboortedatum">Geboortedatum</label>
+                        <input type="date" name="birthdate" required>
+                    </div>
+                    <div>
+                        <label for="woonplaats">Woonplaats</label>
+                        <input type="text" name="city" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <select id="teachers" name="send-to" required>
+                        <option value="">Choose Subject...</option>
+                    </select>
+                </div>
+                <label for="vraag">Jouw vraag</label>
+                <textarea name="question" id="question" cols="30" rows="10" required></textarea>
+                <div class="radio-container">
+                    <label for="categorie">Categorie</label>
+                    <input type="radio" name="yes" id="yes">
+                    <label for="ja">Ja</label>
+                    <input type="radio" name="no" id="no">
+                    <label for="nee">Nee</label>
+
+                </div>
+                <input type="submit" value="Verstuur e-mail">
+            </form>
         </section>
     </main>
     <footer>
         <div class="icons">
-            <img src="/eindopdracht-frontend/images/output-onlinepngtools.png" alt="logo">
+            <img src="/eindopdracht-frontend/images/output-onlinepngtools(1).png" alt="logo">
             <p>Copyright 2023 - Quinten van der Blom</p>
             <div class="social-media-icons">
                 <i class="fa-brands fa-instagram"></i>
