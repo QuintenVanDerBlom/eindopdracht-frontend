@@ -6,123 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Paradiso</title>
+    <title>Eden</title>
 </head>
 
 <body>
     <nav class="navigation">
-        <img src="images/output-onlinepngtools(1).png" alt="logo">
+        <img src="images/output-onlinepngtools(1).png" alt="Comnpany logo">
         <div class="nav-links">
-            <a class="links" href="#">Home</a>
-            <a class="links" href="#">Our Products</a>
-            <a class="links" href="#">Contact Us</a>
-            <a class="links" href="#">Social Links</a>
-            <a class="links" href="#">Disclaimer</a>
+            <a class="links" href="#home">Home</a>
+            <a class="links" href="#products">Our Products</a>
+            <a class="links" href="#contact">Contact Us</a>
+            <a class="links" href="#footer">Social Links</a>
+            <a class="links" href="#footer">Disclaimer</a>
         </div>
     </nav>
 
-    <header class="headline">
-        <h1>Welcome to the Future</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi in cupiditate quis aliquid maiores.
-            Voluptatum odit nemo, neque harum aspernatur,
-            voluptates, labore provident unde itaque consectetur enim sed atque? Est!</p>
+    <header class="headline" id="home">
+        <h1>Welcome to Eden</h1>
+        <h2>Join us dear guest, as we show you the best places we have to offer, just for you.</h2>
         <div class="headline-buttons">
-            <button>Join Our Program</button>
-            <button>Look at Our Products</button>
+            <button>Promotional Video</button>
+            <button onclick="window.location.href = '#products';">Look at Our Products</button>
         </div>
     </header>
     <main>
-        <section class="subheading">
-            <h1>Onze Producten</h1>
+        <section class="subheading" id="products">
+            <h1>Our Products</h1>
             <div class="cards">
                 <article class="card">
                     <div>
-                        <img src="/eindopdracht-frontend/images/photo-1503764833250-3aa553ba3f2b.jpg" alt="">
+                        <img src="/eindopdracht-frontend/images/photo-1503764833250-3aa553ba3f2b.jpg" alt="Scotland Countryside">
                     </div>
-                    <h1>Vakantie 1</h1>
-                    <i class="fa-solid fa-house"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum numquam eligendi cumque
-                        aspernatur aliquid, veritatis harum, sunt illo accusamus voluptas aperiam labore, id autem
-                        voluptatibus pariatur? Atque, sint aliquam.</p>
-                    <button>Take me there!</button>
+                    <div>
+                        <h1>Scotland - Countryside</h1>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Have you ever wanted to just get away for a bit? Enjoy some peace and quiet in your life?
+                            Look no further, Scotland might be just for you. Go to the countryside of this lovely 
+                            country and enjoy the beautiful landscapes and, of course, the beer.
+                        </p>
+                        <button>Take me there!</button>
+                    </div>
                 </article>
                 <article class="card">
                     <div>
-                        <img src="/eindopdracht-frontend/images/photo-1563950708942-db5d9dcca7a7.jpg" alt="">
+                        <img src="/eindopdracht-frontend/images/photo-1563950708942-db5d9dcca7a7.jpg" alt="Switserland Mountains">
                     </div>
-                    <h1>Vakantie 2</h1>
-                    <i class="fa-solid fa-house"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias architecto magnam iusto
-                        tempora saepe eos suscipit sapiente, accusantium esse amet dolorem mollitia assumenda tempore
-                        voluptatem provident, inventore alias blanditiis reprehenderit.</p>
-                    <button>Take me there!</button>
+                    <div>
+                        <h1>Switserland</h1>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>Going to the beautiful alps of Switserland is the perfect option for people who like
+                            mountain hiking and being in tune with nature. Book your trip here and you'll have 
+                            guarenteed peace and quiet.
+                        </p>
+                        <button>Take me there!</button>
+                    </div>
                 </article>
                 <article class="card">
                     <div>
                         <img src="/eindopdracht-frontend/images/pngtree-cold-winter-scenery-snowy-atmosphere-by-river-picture-image_2778228.png"
-                            alt="">
+                            alt="Norwegian Forests">
                     </div>
-                    <h1>Vakantie 3</h1>
-                    <i class="fa-solid fa-house"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore illo esse tempore nostrum
-                        alias aut provident commodi, officiis maxime corrupti dolores! Molestiae, commodi adipisci
-                        exercitationem accusamus voluptate reprehenderit officiis delectus?</p>
-                    <button>Take me there!</button>
+                    <div>
+                        <h1>Norwegian</h1>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>Going up north, the Norwegian forests are no joke during winter. With thick 
+                            layers of pure snow, you'll have the perfect scenery from a cozy cabin in the woods.
+                        </p>
+                        <button>Take me there!</button>
+                    </div>
                 </article>
             </div>
         </section>
-        <section class="form-container">
+        <section class="form-container" id="contact">
             <form class="form" action="">
                 <div class="name-container">
                     <div>
-                        <label for="firstname">Voornaam</label>
-                        <input type="text" name="firstname" placeholder="Voornaam" required>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" placeholder="Enter your first name..." required>
                     </div>
                     <div>
-                        <label for="surname">Achternaam</label>
-                        <input type="text" name="surname" placeholder="Achternaam" required>
+                        <label for="surname">Surname</label>
+                        <input type="text" name="surname" placeholder="Enter your surname..." required>
                     </div>
                 </div>
                 <div>
-                    <label for="email">Email-adres</label>
-                    <input type="email" name="email" placeholder="E-mail" required>
+                    <label for="email">Mail address</label>
+                    <input type="email" name="email" placeholder="Enter your mail address..." required>
                 </div>
                 <div class="city-container">
                     <div>
-                        <label for="geboortedatum">Geboortedatum</label>
+                        <label for="dob">Date of Birth</label>
                         <input type="date" name="birthdate" required>
                     </div>
                     <div>
-                        <label for="woonplaats">Woonplaats</label>
-                        <input type="text" name="city" required>
+                        <label for="city">City</label>
+                        <input type="text" name="city" placeholder="Please enter your current city..." required>
                     </div>
                 </div>
                 <div class="subject-container">
-                    <label for="subject">Subject:</label>
+                    <label for="subject">Subject</label>
                     <select id="teachers" name="send-to" required>
                         <option value="">Choose Subject...</option>
+                        <option value="0">Feedback</option>
+                        <option value="1">Complaint</option>
+                        <option value="2">Job Application</option>
                     </select>
                 </div>
-                <label for="vraag">Jouw vraag</label>
-                <textarea name="question" id="question" cols="30" rows="10" required></textarea>
+                <label for="vraag">Your comment</label>
+                <textarea name="question" id="question" cols="30" rows="10" placeholder="Please enter your comment..." required></textarea>
                 <div class="radio-container">
-                    <label for="categorie">Categorie</label>
+                    <label for="categorie">Sign up for our Newsletter?</label>
                     <div class="radio-buttons">
-                        <label for="ja">Ja</label>
+                        <label for="yes">Yes</label>
                         <input type="radio" name="yes" id="yes">
-                        <label for="nee">Nee</label>
+                        <label for="no">No</label>
                         <input type="radio" name="no" id="no">
                     </div>
                 </div>
                 <div class="checkbox-container">
                     <input type="checkbox" name="agree" id="agree">
-                    <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden</label>
+                    <label for="voorwaarden">I accept the terms and conditions</label>
                 </div>
-                <input type="submit" value="Verstuur e-mail">
+                <input type="submit" value="Submit">
             </form>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="copyright">
             <p>Copyright 2023 - Quinten van der Blom</p>
         </div>
@@ -134,10 +161,10 @@
             </div>
         </div>
         <div class="links">
-            <a href="#">Privacyverklaring</a>
-            <a href="#">Algemene voorwaarden</a>
-            <a href="#">Cookiebeleid</a>
-            <a href="#">Contacts</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Contact</a>
         </div>
     </footer>
 </body>
