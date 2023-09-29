@@ -220,7 +220,6 @@ button {
     flex-direction: row;
     gap: 20px;
     width: 290px;
-    margin-bottom: 10px;
 }
 
 .form .city-container,
@@ -269,6 +268,23 @@ button {
     margin-bottom: 10px;
 }
 
+.form button {
+    width: auto;
+    height: 50px;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+.form button:hover {
+    background-color: black;
+    border: grey 1px solid;
+    border-radius: 10px;
+    color: white;
+
+    transition: 0.2s;
+}
+
 
 .form input[type=text],
 input[type=email],
@@ -282,12 +298,6 @@ select {
 input[type=radio] {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-input[type=submit] {
-    width: auto;
-    height: 50px;
-    background-color: white;
 }
 
 input:invalid,
@@ -382,7 +392,8 @@ footer i {
         object-position: center;
     }
 
-    .headline h1, h2 {
+    .headline h1,
+    h2 {
         padding: 0px 10px 0px 10px;
     }
 
